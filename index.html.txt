@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgiTech - حلول تكنولوجيا المعلومات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --main-color: #0f172a;
+      --accent-color: #3b82f6;
+      --bg-light: #f1f5f9;
+      --text-dark: #0f172a;
+      --text-light: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .services {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: var(--main-color);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .service i {
+      font-size: 3rem;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">AlgiTech</div>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>مقاولة تكنولوجيا المعلومات الرائدة في الجزائر</h1>
+    <p>نقدم لك حلولاً مبتكرة تشمل البرمجة، الأمن السيبراني، التسويق الرقمي، والاستشارات التقنية.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>خدماتنا</h2>
+    <div class="service-grid">
+      <div class="service">
+        <i class="fas fa-laptop-code"></i>
+        <h3>برمجة التطبيقات</h3>
+        <p>تطوير تطبيقات مخصصة للأندرويد و iOS حسب احتياجاتكم.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-globe"></i>
+        <h3>تطوير المواقع</h3>
+        <p>مواقع عصرية ومتجاوبة مع جميع الأجهزة.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-comments"></i>
+        <h3>الاستشارات التقنية</h3>
+        <p>نرافقكم في رحلتكم الرقمية بخبراتنا واستراتيجياتنا.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-bullhorn"></i>
+        <h3>التسويق الرقمي</h3>
+        <p>إشهار احترافي لمشروعك على منصات التواصل ومحركات البحث.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-shield-alt"></i>
+        <h3>الأمن السيبراني</h3>
+        <p>نحمي بياناتك ونؤمن بيئتك الرقمية ضد أي تهديدات.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AlgiTech. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+
+</html>
